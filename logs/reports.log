@@ -1,0 +1,53 @@
+2025-04-28 21:11:21,806 - views - INFO - Запуск приложения
+2025-04-28 21:11:21,806 - utils - INFO - Запускаем работу функции get_time_for_greeting
+2025-04-28 21:11:21,806 - utils - INFO - Работа функции get_time_for_greeting завершена
+2025-04-28 21:11:21,806 - utils - INFO - Запуск функции get_date_time
+2025-04-28 21:11:21,806 - utils - INFO - Завершение функции get_date_time
+2025-04-28 21:11:21,806 - utils - INFO - Запускаем работу функции get_path_and_period
+2025-04-28 21:11:22,419 - utils - INFO - Работа функции get_path_and_period завершена
+2025-04-28 21:11:22,419 - utils - INFO - Запускаем работу функции get_card_with_spent
+2025-04-28 21:11:22,420 - utils - INFO - В расчет принимаем только расходы
+2025-04-28 21:11:22,420 - utils - INFO - В расчет принимаем только расходы
+2025-04-28 21:11:22,421 - utils - INFO - В расчет принимаем только расходы
+2025-04-28 21:11:22,421 - utils - INFO - В расчет принимаем только расходы
+2025-04-28 21:11:22,421 - utils - INFO - В расчет принимаем только расходы
+2025-04-28 21:11:22,425 - utils - INFO - Работа функции get_card_with_spent завершена
+2025-04-28 21:11:22,425 - utils - INFO - Запускаем работу функции get_top_transactions
+2025-04-28 21:11:22,426 - utils - INFO - Работа функции get_top_transactions завершена
+2025-04-28 21:11:22,426 - utils - INFO - Запускаем работу функции get_usd_eur
+2025-04-28 21:11:22,427 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.apilayer.com:443
+2025-04-28 21:11:22,984 - urllib3.connectionpool - DEBUG - https://api.apilayer.com:443 "GET /exchangerates_data/convert?amount=1&from=USD&to=RUB HTTP/1.1" 200 None
+2025-04-28 21:11:22,985 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.apilayer.com:443
+2025-04-28 21:11:23,508 - urllib3.connectionpool - DEBUG - https://api.apilayer.com:443 "GET /exchangerates_data/convert?amount=1&from=EUR&to=RUB HTTP/1.1" 200 None
+2025-04-28 21:11:23,508 - utils - INFO - Работа функции get__usd_eur завершена
+2025-04-28 21:11:23,508 - utils - INFO - Запускаем работу функции get_stocks
+2025-04-28 21:11:23,508 - utils - INFO - Открываем файл с данными для запроса
+2025-04-28 21:11:23,509 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.marketstack.com:443
+2025-04-28 21:11:23,998 - urllib3.connectionpool - DEBUG - https://api.marketstack.com:443 "GET /v1/eod/latest?access_key=&symbols=AAPL HTTP/1.1" 401 None
+2025-04-28 21:11:23,998 - utils - ERROR - Запрос не успешен, статус-код: 401
+2025-04-28 21:11:23,999 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.marketstack.com:443
+2025-04-28 21:11:24,497 - urllib3.connectionpool - DEBUG - https://api.marketstack.com:443 "GET /v1/eod/latest?access_key=&symbols=AMZN HTTP/1.1" 401 None
+2025-04-28 21:11:24,498 - utils - ERROR - Запрос не успешен, статус-код: 401
+2025-04-28 21:11:24,498 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.marketstack.com:443
+2025-04-28 21:11:24,954 - urllib3.connectionpool - DEBUG - https://api.marketstack.com:443 "GET /v1/eod/latest?access_key=&symbols=GOOGL HTTP/1.1" 401 None
+2025-04-28 21:11:24,954 - utils - ERROR - Запрос не успешен, статус-код: 401
+2025-04-28 21:11:24,955 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.marketstack.com:443
+2025-04-28 21:11:25,420 - urllib3.connectionpool - DEBUG - https://api.marketstack.com:443 "GET /v1/eod/latest?access_key=&symbols=MSFT HTTP/1.1" 401 None
+2025-04-28 21:11:25,420 - utils - ERROR - Запрос не успешен, статус-код: 401
+2025-04-28 21:11:25,421 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.marketstack.com:443
+2025-04-28 21:11:25,963 - urllib3.connectionpool - DEBUG - https://api.marketstack.com:443 "GET /v1/eod/latest?access_key=&symbols=TSLA HTTP/1.1" 401 None
+2025-04-28 21:11:25,963 - utils - ERROR - Запрос не успешен, статус-код: 401
+2025-04-28 21:11:25,963 - utils - INFO - Работа функции get_stocks завершена
+2025-04-28 21:11:25,964 - views - INFO - Работа приложения завершена
+2025-04-28 21:11:26,452 - reports - INFO - Запуск функции spending_by_category с категорией: Фастфуд и датой: 2018-04-15
+2025-04-28 21:11:26,452 - reports - INFO - Преобразуем дату в формат datetime
+2025-04-28 21:11:26,455 - reports - INFO - Столбец 'Дата платежа' преобразован в формат datetime
+2025-04-28 21:11:26,456 - reports - INFO - Группируем данные по категории и сумме платежа
+2025-04-28 21:11:26,456 - reports - INFO - Работа приложения завершена
+2025-04-28 21:11:26,456 - reports - INFO - Отчет сохранен в report_spending_by_category.json
+2025-04-28 21:11:26,457 - services - INFO - Запуск функции spending_by_category с файлом: ../data/operations.xlsx, годом: 2018, месяцем: 5
+2025-04-28 21:11:26,948 - services - INFO - Преобразование даты в формат datetime
+2025-04-28 21:11:26,949 - services - INFO - Фильтрация данных по году и месяцу
+2025-04-28 21:11:26,950 - services - INFO - Фильтрация расходов
+2025-04-28 21:11:26,950 - services - INFO - Расчет кэшбэка
+2025-04-28 21:11:26,950 - services - INFO - Анализ завершён. Найдено 21 категорий.
